@@ -16,7 +16,7 @@
 #include <linux/quotaops.h>
 #include <linux/backing-dev.h>
 #include "internal.h"
-#include <trace/events/mmcio.h>
+
 #ifdef CONFIG_DYNAMIC_FSYNC
 extern bool power_suspend_active;
 extern bool dyn_fsync_active;
