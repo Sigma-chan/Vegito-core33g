@@ -4813,9 +4813,7 @@ static inline void calculate_imbalance(struct lb_env *env, struct sd_lb_stats *s
 		return fix_small_imbalance(env, sds);
 	}
 
-<<<<<<< HEAD
 	if (!sds->group_imb) {
-=======
 	if (!ld_moved) {
 		schedstat_inc(sd, lb_failed[idle]);
 		/*
