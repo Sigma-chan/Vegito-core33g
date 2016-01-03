@@ -429,6 +429,10 @@ u32 _mali_ukk_utilization_gp_pp(void)
 	return last_utilization_gpu;
 }
 
+#ifdef CONFIG_THUNDERPLUG_CONTROL
+EXPORT_SYMBOL(_mali_ukk_utilization_gp_pp);
+#endif
+
 u32 _mali_ukk_utilization_gp(void)
 {
 	return last_utilization_gp;
